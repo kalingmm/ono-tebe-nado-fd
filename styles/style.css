@@ -1,4 +1,6 @@
 /* место для вашего кода */
+
+
 .header{
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -33,4 +35,356 @@ list-style-type: none;
 
 .link_main{
     text-decoration: none;
+}
+
+.address { 
+  padding-left: 190px;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
+  font-style: normal;
+  font-family:"Raleway", sans-serif;
+  list-style-type: none;
+  } 
+
+  .cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cover_title {
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 147px;
+  gap: 20px; 
+  text-align: center;
+}
+
+.cover_title  .span {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 30px;
+}
+
+.text_cover { 
+  
+  align-self: flex-start;
+  line-height: 115%;
+  transform: translateY(2px);
+  text-align: center;  
+  word-spacing: 5px; 
+}
+
+.text_center {
+  align-self: center;  
+  text-align: center;  
+}
+
+.text_right {
+  align-self: flex-end;  
+  text-align: right; 
+} 
+
+.text_cover .spacing  {
+  letter-spacing: 60px;  
+} 
+
+.text_cover .no_spacing_ok { 
+  letter-spacing: 0px; /* сброс межбуквенного разрыва */ 
+}
+
+.text_cover .half_spacing { 
+  letter-spacing: 60px;
+}
+
+.text_cover .no_spacing { 
+  letter-spacing: 60px;
+}
+
+.cover_description {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 0px 50px 55px 78px;
+  gap: 79px;
+}
+
+.cover_text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  word-spacing: 18px;
+}
+
+.button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 51px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title_lots {
+  padding-top: 179px;
+  padding-bottom: 26px;
+  padding-left: 64px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container_lots {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 25px;
+  justify-content: flex-start; /* стартик */ 
+  padding: 0; 
+  margin: 0 auto;
+  margin-left: 20px; /* левый отступ  */ 
+}
+
+.card_lots {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 51px 40px 48px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_about_cinema {
+  background-image: url(./../images/card-lot-01.jpg);
+}
+
+.card_about_book {
+  background-image: url(./../images/card-lot-02.jpg);
+}
+
+.card_about_picture {
+  background-image: url(./../images/card-lot-03.jpg);
+}
+
+.card_title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.text_on_card {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.view_more {
+  display: block;
+  text-underline-offset: 3px;
+  padding-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  margin-left: 64px;
+}
+
+.title_lots {
+  padding-top: 179px;
+  padding-bottom: 26px;
+  padding-left: 64px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container_lots {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 25px;
+  justify-content: flex-start;  /* стартик */ 
+  padding: 0; 
+  margin: 0 auto;
+  margin-left: 20px;  /* левый отступ как в макете*/ 
+}
+
+.card_lots {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 51px 40px 48px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_about_cinema {
+  background-image: url(./../images/card-lot-01.jpg);
+}
+
+.card_about_book {
+  background-image: url(./../images/card-lot-02.jpg);
+}
+
+.card_about_picture {
+  background-image: url(./../images/card-lot-03.jpg);
+}
+
+.card_title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.text_on_card {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.view_more {
+  display: block;
+  text-underline-offset: 3px;
+  padding-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  margin-left: 64px;
+}
+
+
+.title_lots {
+  padding-top: 179px;
+  padding-bottom: 26px;
+  padding-left: 64px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container_lots {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 25px;
+  justify-content: flex-start;   /* чтобы был старт */ 
+  padding: 0; 
+  margin: 0 auto;
+  margin-left: 20px;    /* слева отступ чтобы было как в макете */ 
+}
+
+.card_lots {
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 51px 40px 48px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_about_cinema {
+  background-image: url(./../images/card-lot-01.jpg);
+}
+
+.card_about_book {
+  background-image: url(./../images/card-lot-02.jpg);
+}
+
+.card_about_picture {
+  background-image: url(./../images/card-lot-03.jpg);
+}
+
+.card_title {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+.text_on_card {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.view_more {
+  display: block;
+  text-underline-offset: 3px;
+  padding-top: 30px;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  margin-left: 64px;
 }
