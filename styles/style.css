@@ -1,34 +1,35 @@
-.header {
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-    height: 293px;
-    padding: 92px 50px 96px 50px;
+/* место для вашего кода */
+
+  .header {
+   display: grid;
+   grid-template-columns: 1fr min-content 1fr;
+   align-items: center;
+   padding: 92px 50px 96px 50px;
   }
   
   .header__links-list {
-    display: flex;
-    gap: 33px;
+   display: flex;
+   gap: 33px;
   }
-  
+
   .header__links-list-item {
-    list-style: circle;
+   list-style: circle;
   }
   
   .header__links-list-item_no-bullit {
-    list-style: none;
+   list-style: none;
   }
   
   .header__link {
-    color: #000;
-    font-weight: 400;
-    font-size: 18px;
-    text-decoration: underline;
-    text-underline-position: under;
+   color: #000;
+   font-weight: 400;
+   font-size: 18px;
+   text-decoration: underline;
+   text-underline-position: under;
   }
   
   .header__link_active {
-    text-decoration: none;
+   text-decoration: none;
   }
   
   .header__logo {
@@ -43,7 +44,7 @@
   .address {
     width: 240px;
     color: #000;
-    font-family: Raleway;
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
@@ -73,7 +74,7 @@
   
   .cover {
     position: relative;
-    height: 757px;
+    min-height: 757px;
     padding: 165px 20px 50px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -171,6 +172,9 @@
     gap: 35px;
     height: 100%;
     padding: 48px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   
   .card__title {
@@ -197,9 +201,6 @@
   
   .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   
   .card_type_book {
@@ -229,7 +230,6 @@
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 25px;
-    height: 596px;
     margin: 0 24px 0 24px;
   }
   
@@ -272,13 +272,10 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0%;
-  }
-  
-  .about__text-p1 {
     margin-right: 5px;
     margin-bottom: 24px;
   }
-  
+   
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
