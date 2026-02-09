@@ -165,7 +165,7 @@
   }
   
   .card {
-    position: relative;
+    position: replative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -205,16 +205,12 @@
   
   .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
   }
   
   .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
   }
   
   .lots__look-more-link {
@@ -251,7 +247,7 @@
   .about__column-text {
     justify-self: start;
     margin-top: 133px;
-    margin-bottom: 13px;
+
   }
   
   .about__column-logo {
@@ -271,9 +267,12 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0%;
-    margin-right: 5px;
-    margin-bottom: 24px;
+ 
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 0.2px;
+    gap: 24px;
   }
    
   .footer {
